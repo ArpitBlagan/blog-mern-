@@ -1,5 +1,5 @@
 import { createApi,fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-const baseUrl='http://localhost:5002/blog/query'
+const baseUrl='https://backend-k905.onrender.com/query'
 export const queryApi=createApi({
     reducerPath:'query',
     baseQuery:fetchBaseQuery({baseUrl}),
