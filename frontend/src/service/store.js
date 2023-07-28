@@ -11,5 +11,5 @@ const store=configureStore({
     },
     middleware:(getDefaultMiddleware)=>getDefaultMiddleware().concat([blogsApi.middleware,userApi.middleware,queryApi.middleware])
 });
-store.setupListeners();
+
 export default store;
