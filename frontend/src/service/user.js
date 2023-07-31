@@ -1,6 +1,6 @@
 import {createApi,fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 const baseUrl='https://backend-k905.onrender.com/blog';
-export const userApi=createApi({
+export const userApi=createApi({ 
     reducerPath:'user',
     baseQuery:fetchBaseQuery({baseUrl}),
     endpoints(builder){
