@@ -5,7 +5,7 @@ import { useLoggedInQuery } from '../service/user';
 const Logged =(props) => {
     const[ok,setO]=useState(undefined);
     const check=async()=>{
-      const data=await axios.get("http://localhost:5002/blog/loggedIn",{
+      const data=await axios.get("https://backend-k905.onrender.com/blog/loggedIn",{
         withCredentials:true
       });
       setO(data.data);
